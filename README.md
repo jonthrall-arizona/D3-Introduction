@@ -3,7 +3,7 @@ D3 Introduction
 
 **[Live demo →](https://jonthrall-arizona.github.io/D3-Introduction/)**
 
-Author: Jon Thrall (Jonthrall@arizona.edu)
+Author: Jon Thrall (Jonthrall21@gmail.com)
 
 ## Notes
 
