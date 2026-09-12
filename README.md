@@ -1,15 +1,22 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/d63JlgJI)
-Template for A02
+D3 Introduction
 ------------
 
-Author: Jon Thrall (Jonthrall@arizona.edu)<br />
-Submission Date: 26 September 2024
+**[Live demo →](https://jonthrall-arizona.github.io/D3-Introduction/)**
+
+Author: Jon Thrall (Jonthrall@arizona.edu)
 
 ## Notes
 
-This project displays four SVG plots using d3.js to create and complete each individual svg. The project is built using HTML and JavaScript. The following are a description of what each chart displays. 
-  
+This project displays four charts built with [D3.js](https://d3js.org): a heatmap and a bubble
+chart of UK driver fatalities by month, a time-series bar chart of the same data, and a scatter
+plot of Calvin College senior GPA vs. ACT score. Each chart has titles, labeled axes, and (where
+the chart uses a continuous color scale) a legend.
+
+This is an early, introductory D3 project — later projects in this portfolio build on the
+techniques used here (margin convention, scales, axes, tooltips).
+
 ## Environment
+
 * Operating System: Mac
 * Browser: Chrome
 
@@ -17,15 +24,19 @@ This project displays four SVG plots using d3.js to create and complete each ind
 
 * README.md -- this file
 * index.html
+* style.css
 * a03.js
 * calvinScores.js
-* d3.js
 * ukDriverFatalities.js
+
+D3 is loaded from the [d3js.org CDN](https://d3js.org/d3.v7.min.js) rather than vendored locally.
 
 ## How to Run
 
-To run this project, simply open the index.html file in a modern browser. The JavaScript is automatically applied as long as all files remain in the same directory.
+Open `index.html` in a modern browser (or serve the folder with any static file server). An
+internet connection is needed to load D3 from the CDN.
 
 ## References
 
-Two external resources were used in this project. In the implementation of a number of functions (which are annotated at their location), code snippets from "svg.js" and "iteration_8.js" (both instructor issued files) were used and or modified in order to best complete this code.  
+Code snippets from "svg.js" and "iteration_8.js" (instructor-issued files) informed an earlier
+version of this project; the current version no longer depends on either file.

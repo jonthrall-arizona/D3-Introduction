@@ -1,7 +1,7 @@
 <!--
 
-Jon Thrall 
-CSC 444, Section 001 
+Jon Thrall
+CSC 444, Section 001
 
 -->
 
@@ -9,22 +9,75 @@ CSC 444, Section 001
 <html lang="en">
 
 <head>
-  
   <meta charset="UTF-8" />
-  <script src="svg.js"></script>
-  <script src="d3.js"></script>
-  <script src="calvinScores.js"></script>
-  <script src="ukDriverFatalities.js"></script>
-  <title>CSC 444 Assignment 3</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D3 Introduction — Jon Thrall</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- D3 loaded from CDN rather than vendored locally -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 
 <body>
 
-  <div id="div1"></div>
-  <div id="div2"></div>
-  <div id="div3"></div>
-  <div id="div4"></div>
+  <header class="page-header">
+    <p class="eyebrow">D3.js · Data Visualization</p>
+    <h1>D3 Introduction</h1>
+    <p class="intro">
+      Four charts built with <a href="https://d3js.org" target="_blank" rel="noopener">D3.js</a>,
+      covering two real datasets: monthly UK driver fatalities from 1969&ndash;1984, and standardized
+      test scores for a class of college seniors. This project marks an early step in learning D3 —
+      later projects in this portfolio build on the techniques introduced here.
+    </p>
+  </header>
+
+  <main>
+
+    <section class="chart-card" id="section-heatmap">
+      <h2>UK Driver Fatalities by Month, 1969&ndash;1984</h2>
+      <p class="chart-desc">
+        Each cell is one month. Darker cells mark months with more driver fatalities, making the
+        seasonal pattern &mdash; a rise every autumn and winter &mdash; easy to spot across the full
+        16-year span.
+      </p>
+      <div id="div1"></div>
+    </section>
+
+    <section class="chart-card" id="section-bubble">
+      <h2>UK Driver Fatalities, Bubble View</h2>
+      <p class="chart-desc">
+        The same monthly data, encoded a second way: bubble area scales with the fatality count for
+        that month, from the lowest month (bottom of the legend) to the highest (top). Comparing this
+        to the heatmap above shows two different ways of encoding the same variable.
+      </p>
+      <div id="div2"></div>
+    </section>
+
+    <section class="chart-card" id="section-bar">
+      <h2>UK Driver Fatalities Over Time</h2>
+      <p class="chart-desc">
+        All 192 months plotted as a single time series. The seatbelt law introduced in early 1983 is
+        visible as a sharp drop partway through the chart.
+      </p>
+      <div id="div3"></div>
+    </section>
+
+    <section class="chart-card" id="section-scatter">
+      <h2>Calvin College Seniors: GPA vs. ACT Score</h2>
+      <p class="chart-desc">
+        271 seniors, each plotted by GPA (x-axis) and ACT score (y-axis). Bubble size reflects SAT
+        Verbal score; color reflects SAT Math score, from low (blue) to high (red).
+      </p>
+      <div id="div4"></div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>Built with D3.js v7 &middot; <a href="https://github.com/jonthrall-arizona/D3-Introduction" target="_blank" rel="noopener">View source on GitHub</a></p>
+  </footer>
+
+  <script src="ukDriverFatalities.js"></script>
+  <script src="calvinScores.js"></script>
   <script src="a03.js"></script>
 
 </body>
